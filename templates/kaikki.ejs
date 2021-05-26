@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hae kaikki</title>
+
+        <link rel="stylesheet" href="/public/basicStyles.css">
+    </head>
+
+    <body>
+        <a href="/"><button>Takaisin</button></a>
+        <h1>Kaikki tiedot</h1>
+
+        <table class="basic-table">
+            <thead>
+                <tr>
+                    <th>numero</th>
+                    <th>rotu</th>
+                    <th>painoKg</th>
+                    <th>syntymavuosi</th>
+                    <th>pituus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (typeof koirat != 'undefined') { %>
+                    <% for (let i = 0; i < koirat.length; i++) { %>
+                        <tr>
+                            <td><%= koirat[i].numero %></td>
+                            <td><%= koirat[i].rotu %></td>
+                            <td><%= koirat[i].painoKg %></td>
+                            <td><%= koirat[i].syntymavuosi %></td>
+                            <td><%= koirat[i].pituus %></td>
+                        </tr>
+                    <% } %>
+                <% } %>
+            </tbody>
+        </table>
+    </body>
+
+</html>

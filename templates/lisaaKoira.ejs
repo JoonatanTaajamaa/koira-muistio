@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lisää koira</title>
+
+        <link rel="stylesheet" href="/public/basicStyles.css">
+    </head>
+
+    <body>
+        <a href="/"><button>Takaisin</button></a>
+        <% if (typeof viesti != 'undefined') { %>
+            <pre><%= viesti %></pre>
+        <% } %>
+        <h1>Lisää uusi koira</h1>
+        <form class="basic-form" action="/koira/lisaa" method="POST">
+            <label for="numero-input">numero</label>
+            <input type="text" name="numero" id="numero-input" class="margin-41-left-width-60 basic-input">
+
+            <br>
+
+            <label for="rotu-input">rotu</label>
+            <input type="text" name="rotu" id="rotu-input" class="margin-65-left-width-150 basic-input">
+
+            <br>
+
+            <label for="painoKg-input">painoKg</label>
+            <input type="text" name="painoKg" id="painoKg-input" class="margin-35-left-width-60 basic-input">
+
+            <br>
+
+            <label for="syntymavuosi-input">syntymavuosi</label>
+            <input type="text" name="syntymavuosi" id="syntymavuosi-input" class="margin-2-left-width-60 basic-input">
+
+            <br>
+
+            <label for="pituus-input">pituus</label>
+            <input type="text" name="pituus" id="pituus-input" class="margin-52-left-width-60 basic-input">
+
+            <br>
+
+            <button type="submit">Lähetä</button>
+        </form>
+    </body>
+
+</html>

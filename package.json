@@ -1,0 +1,27 @@
+{
+  "name": "Taajamaa_Joonatan_koira_projekti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Playerguy23/Taajamaa_Joonatan_koira_projekti.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Playerguy23/Taajamaa_Joonatan_koira_projekti/issues"
+  },
+  "homepage": "https://github.com/Playerguy23/Taajamaa_Joonatan_koira_projekti#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mariadb": "^2.5.3"
+  }
+}
